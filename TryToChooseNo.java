@@ -18,6 +18,7 @@ class ActionEventDemo implements ActionListener {
         root.setTitle("Try To Say No!");
         root.setSize(500, 500);
         root.setLocation(700,300);
+        root.setDefaultCloseOperation(0);
         root.setVisible(true);
         root.setLayout(null);
         root.setResizable(false);
