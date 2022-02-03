@@ -26,7 +26,7 @@ class ActionEventDemo implements ActionListener {
     public void buttonyes(){
         buttyes.setBounds(100,100,95,30);
         buttyes.setBackground(Color.green);
-        buttyes.addActionListener(e -> JOptionPane.showMessageDialog(null, "I Won!"));
+        buttyes.addActionListener(e -> IWonAndImOut());
         root.add(buttyes);
     }
     public void buttonno(){
@@ -34,6 +34,10 @@ class ActionEventDemo implements ActionListener {
         buttno.setBackground(Color.red);
         buttno.addActionListener(this);
         root.add(buttno);
+    }
+    public void IWonAndImOut(){
+        JOptionPane.showMessageDialog(null, "I Won!");
+        System.exit(0);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
