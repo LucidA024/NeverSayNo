@@ -41,7 +41,7 @@ class MyFrame extends JFrame implements ActionListener{
         }
     }
 }
-public class TryToChooseNo_A001 {
+public class TryToChooseNo {
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null, "If You Choose Yes, I Win");
         new MyFrame();
